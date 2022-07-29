@@ -1,0 +1,164 @@
+
+.dailyContainerToday{
+    width: 100%;
+    height: 100vh !important;
+    font-size: 50px;
+    font-family: Roboto sans-serif;
+    color: rgba(51, 51, 51, 0.81) !important;
+    text-shadow: black;
+}
+
+.innerContainerToday{
+    background-color: rgba(245, 245, 245, 0.5);
+    box-shadow: 0 0 5px rgba(245, 245, 245, 0.5) !important;
+    width: 100%;
+    height: 90%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+
+}
+
+.firstRowToday{
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+
+}
+
+.municipalityNameToday{
+
+    font-size: 5vw;
+    margin: 0;
+    float: left;
+
+}
+
+.dateToday{
+    font-size: 4vw;
+    margin-right: 0;
+    float: right;
+}
+
+.secondRowToday{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    padding-left: 15px;
+    padding-bottom: 15px;
+}
+
+.minmaxDivToday{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    color: rgba(245, 245, 245, 0.85);
+    border-radius: 20px;
+}
+
+.minDivToday{
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(300deg, rgba(22,204,43,1) 0%, rgba(16,176,34,1) 55%, rgba(18,135,31,1) 100%);
+    opacity: 0.9;
+}
+
+.minUpperToday{
+    width: 100%;
+    height: 20%;
+    font-size: 3vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+
+}
+
+.minLowerToday{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+
+}
+
+.minValueToday{
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 9vw;
+}
+
+.maxDivToday{
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(300deg, rgba(237,22,22,1) 0%, rgba(208,19,19,1) 55%, rgba(152,33,33,1) 100%);
+    opacity: 0.9;
+}
+
+.maxUpperToday{
+    width: 100%;
+    height: 20%;
+    font-size: 3vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.maxLowerToday{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.maxValueToday{
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    font-size: 9vw;
+}
+
+.pollTypeAndUnitDivToday{
+    height: 100%;
+    width: 40%;
+}
+
+.pollTypeDivToday{
+    width: 100%;
+    height: 80%;
+}
+
+.pollTypeToday{
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    font-size: 9vw;
+}
+
+.pollUnitDivToday{
+    width: 100%;
+    height: 20%;
+    overflow: hidden;
+    float: right;
+    padding: 5px;
+
+}
+
+.unitToday{
+    float: right;
+    font-size: 3vw;
+}

@@ -1,0 +1,654 @@
+@media only screen and (max-width: 900px)
+{
+    .legendNplayer{
+
+        bottom: 10px !important;
+
+    }
+
+    .MuiSlider-root{
+
+          max-width: 100% !important;
+          left: 30px !important;
+          /*top: 20% !important;*/
+          /*left: 5% !important;*/
+
+      }
+
+
+
+    .legenda{
+        bottom: 0px !important;
+    }
+
+
+    /*.searchBox{*/
+    /*    max-width: 170px !important;*/
+    /*    margin: 0!important;*/
+    /*    left: 70px !important;*/
+    /*}*/
+
+    .navigation{
+        top: 30px !important;
+        /*width: 210px !important;*/
+        font-size: 0.7rem;
+        margin: 0 !important;
+        float: right !important;
+        animation: none !important;
+        transition: none !important;
+        transform: none !important;
+    }
+    .NavDivStyle{
+        margin: 0 !important;
+        float: left !important;
+        padding: 0 !important;
+    }
+
+
+    .playNpause{
+        margin-bottom: 40px !important;
+        margin-left: -10px !important;
+    }
+
+    .btnPlayer{
+       margin-bottom: 45px;
+    }
+
+    .selectPollutantSwitch{
+        top: 80px !important;
+        right: -25px !important;
+        transform: scale(0.7) !important;
+    }
+    .navbar-collapse.collapse.show{
+        /*margin-top: 35px !important;*/
+
+    }
+
+    .logosSpan{
+        top: 0 !important;
+        width: 170px !important;
+    }
+
+    .pmAlarmLogoStyle{
+        width: 170px !important;
+    }
+    .searchBox{
+        max-width: 190px !important;
+    }
+    .ui.icon.input{
+        width: 200px !important; ;
+    }
+    .results.transition.visible{
+        width: 200px !important;
+    }
+
+}
+/*<Leaflet components>*/
+.mapa{
+    width: 100vm;
+    height: 100vh;
+    z-index: 0 !important;
+
+}
+
+
+
+.leaflet-popup-content-wrapper{
+    height: 30px !important;
+    width: 170px;
+    opacity: 0.8 !important;
+    border-radius: 0px;
+    border-top-right-radius: 20px;
+    background-color: rgba(51, 51, 51, 0.9);
+    color: white !important;
+    font-size: 0.9rem;
+    transform: translate(84px,-26px);
+    padding: 0;
+    box-shadow: 0 0 3px black !important;
+
+}
+
+.leaflet-popup-close-button{
+    min-height: 20px !important;
+    min-width: 20px !important;
+    transform: translate(85px,-22px) !important;
+    border-radius: 30px !important;
+    background-color: rgba(255, 45, 39, 0.77) !important;
+    padding: 2px 0 0 0 !important;
+    margin: 0 !important;
+    color: white !important;
+    box-shadow: 0 0 3px black !important;
+    z-index: 2 !important;
+}
+
+.selectedPollutantLoadingCircle{
+    color: #FF2D27 !important;
+}
+
+.activateMoreInfo{
+    padding: 5px;
+    margin-left: 15px;
+}
+
+leaflet-popup-close-button:hover{
+    transform: scale(1.2) !important;
+}
+
+
+.leaflet-popup.leaflet-zoom-animated{
+    /*transform: translate(2px,-2px) !important;*/
+}
+
+.leaflet-popup-content{
+    width: 100%;
+    font-size:12px;
+    padding-top: 8px ;
+}
+
+.leaflet-popup-tip{
+    background-color: rgba(51, 51, 51, 0.9);
+    opacity: 0.8 !important;
+    height: 40px;
+    width: 2px;
+    transform: none;
+    box-shadow: none;
+    margin: 0;
+
+}
+
+.leaflet-popup-tip-container{
+    height: 40px;
+    width: 2px;
+    padding: 0;
+    transform: translate(19px,-26px);
+    box-shadow: 0 0 1px black !important;
+}
+
+.leaflet-popup-close-button{
+    right: 0px !important;
+    margin: 0 !important;
+
+}
+
+.moreInfoButton{
+    background-color: #ebebeb !important;
+    border-style: none !important;
+    width: 20px !important;
+    height: 20px !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-top: -4px !important;
+    margin-right: 5px !important;
+    margin-left: -5px !important;
+    color: rgb(255, 45, 39) !important;
+    transform: scale(0.9) !important;
+    border-radius: 60px;
+}
+
+.fas.fa-chevron-circle-down{
+    transform: scale(1.6) !important;
+    margin-top: -7px !important;
+}
+
+.moreInfoButton:enabled{
+    border-style: none !important;
+
+}
+
+.selectedLocationPin, .gpsLocationPin{
+    color: whitesmoke !important;
+    opacity: 0.9 !important;
+    font-size: 1.4rem;
+    text-shadow: 0 0 15px black;
+
+}
+
+/*</ Leaflet components>*/
+
+/*<Navigation>*/
+.navigation{
+    z-index: 2;
+    position: absolute;
+    border-radius: 30px;
+    max-width: 369.5px;
+    background-color: rgba(43, 43, 43, 0) !important;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-right: 14px;
+    color: #ffffff !important;
+
+}
+
+.navbar-brand{
+    border: none !important;
+
+}
+
+.navbar-toggler{
+    transform: scale(1.1) !important;
+    transform: scaleX(1.4) !important;
+    border: none !important;
+    text-shadow: 0 0 10px black !important;
+}
+
+/*Dropdown menu button*/
+.fa-bars{
+    transform: scale(1.4);
+    color: white !important;
+    text-shadow: 0 0 7px black !important;
+}
+
+.fa-bars:hover {
+    transform: scale(1.5);
+}
+
+.navbar-toggler-icon:hover{
+    transform: scale(3.1);
+}
+
+.findGpsButtonDiv ,.shareStateButtonDiv{
+    font-size: 1.3rem;
+    margin-left: 15px;
+}
+
+/*<GPS and Share buttons>*/
+.fa-share-alt, .fa-map-marker-alt{
+    text-shadow: 0 0 7px #333333;
+}
+
+.fa-share-alt:hover, .fa-map-marker-alt:hover{
+    transform: scale(1.2);
+}
+/*</GPS and Share buttons>*/
+
+.nav-link{
+    color: white !important;
+    text-shadow: 0 0 5px #333333 !important;
+}
+
+.nav-link:hover{
+    transform: scale(1.01);
+}
+
+.navigation .navbar-brand{
+    color: white !important;
+
+}
+
+/*</ Navigation>*/
+
+/*<Search input>*/
+
+.searchBox{
+    max-width: 225px;
+    /*margin-left: -7px !important;*/
+    box-shadow: 0 0 5px black;
+    border-radius: 20px;
+
+}
+
+/*.ui.input>input.not([value=""]){*/
+/*    background-color: green !important;*/
+/*}*/
+.prompt{
+    opacity: 0.95 !important;
+}
+
+.prompt:not([value='']){
+    opacity: 0.95 !important;
+    border-top-left-radius: 20px !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    width: 210px;
+}
+
+div.results.transition.visible{
+    opacity: 0.95 !important;
+    margin-top: 1px !important;
+    border-radius: 0 !important;
+    overflow-y: scroll !important;
+    scrollbar-color: #777777 whitesmoke;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: auto !important;
+    max-height: 500px;
+    padding: 0 !important;
+}
+
+.results.transition{
+    width: 210px !important;
+    padding: 0 !important;
+}
+
+div.result{
+    width: 100% !important;
+    height: 100% !important;
+    box-shadow: none !important;
+    border-style: none !important;
+}
+
+
+div.result:hover, div.result:hover div.ui.label {
+    background-color: rgb(219, 231, 255) !important;
+    transition: none !important;
+
+}
+
+div.ui.label{
+    background-color: white !important;
+    height: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border-style: none !important;
+    transition: none !important;
+
+
+}
+
+
+
+/* Chrome scroll style */
+::-webkit-scrollbar {
+    height: 8px !important;
+    width: 8px !important;
+    background: whitesmoke !important;
+    left: -6px !important;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #777777 !important;
+    -webkit-border-radius: 1ex !important;
+    -webkit-box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.75) !important;
+}
+
+/* /Chrome scroll style */
+
+.rbt-input-main{
+    opacity: 0.9 !important;
+    border-radius: 30px !important;
+    height: 30px !important;
+}
+
+.rbt-menu{
+    opacity: 0.9 !important;
+    border-radius:20px !important;
+    box-shadow: 0 0 5px black;
+    scrollbar-width: none !important; /*Remove scrollbar from Mozila Firefox*/
+    margin-top: 2px;
+
+}
+
+::-webkit-scrollbar {
+    /*Remove scrollbar from Chrome*/
+    width: 0px;
+    height: 0px;
+
+}
+/*</ Search input>*/
+
+
+
+div.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+div.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+div.col-lg-1,div.col-lg-10,div.col-lg-11,div.col-lg-12,div.col-lg-2,div.col-lg-3,div.col-lg-4,div.col-lg-5,div.col-lg-6,div.col-lg-7,div.col-lg-8,div.col-lg-9,
+div.col-md-1,div.col-md-10,div.col-md-11,div.col-md-12,div.col-md-2,div.col-md-3,div.col-md-4,div.col-md-5,div.col-md-6,div.col-md-7,div.col-md-8,div.col-md-9,
+div.col-sm-1,div.col-sm-10,div.col-sm-11,div.col-sm-12,div.col-sm-2,div.col-sm-3,div.col-sm-4,div.col-sm-5,div.col-sm-6,div.col-sm-7,div.col-sm-8,div.col-sm-9,
+div.col-xs-1,div.col-xs-10,div.col-xs-11,div.col-xs-12,div.col-xs-2,div.col-xs-3,div.col-xs-4,div.col-xs-5,div.col-xs-6,div.col-xs-7,div.col-xs-8,div.col-xs-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+
+h4{
+    color: #777;
+}
+
+
+.legenda{
+    bottom: 15px !important;
+    width: 90%;
+    left:5%;
+    background: linear-gradient(to right, green , #e8e801,orange 40%, red 60%, blueviolet 76%, brown 92%);
+    opacity: 0.8;
+    border-radius: 7px;
+    box-shadow: 0 0 5px black;
+    border: 1px darkgrey;
+
+}
+
+
+.legendTabs{
+    padding: 2px;
+    width: 60px;
+    height: 20px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    text-shadow: 0 0 3px #333333;
+    bottom: 2px !important;
+}
+
+.legendCol{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.marginLegendTabs{
+    margin: 0;
+}
+
+h6{
+    font-size: 0.6rem;
+}
+
+
+
+.row_height{
+
+    min-height: 30px;
+    min-width: 140px;
+}
+
+.mdb-select .md-form{
+    border: none;
+    background-color: #777777;
+}
+
+/*<Hours slider>*/
+
+.MuiSlider-root{
+    width: 93% !important;
+    left:2% !important;
+
+
+}
+
+.MuiSlider-rail{
+    background-color: #333333 !important;
+    height: 4px !important;
+    box-shadow: 0 0 1px black !important;
+    border-radius: 20px !important;
+}
+
+.MuiSlider-track{
+    background-color: whitesmoke !important;
+
+    height: 4px !important;
+    box-shadow: 0 0 2px black !important;
+    border-radius: 20px !important;
+}
+
+.MuiSlider-thumb{
+    background-color: whitesmoke !important;
+    height: 0 !important;
+    box-shadow: 0 0 5px black !important;
+    border-radius: 20px !important;
+
+}
+
+.MuiSlider-mark{
+    color: #333333 !important;
+    height: 15px !important;
+    top: 5px !important;
+    box-shadow: 0 0 3px black;
+    opacity: 0.9 !important;
+}
+
+.MuiSlider-markLabel{
+    color: white !important;
+    text-shadow: 0 0 4px black;
+    opacity: 0.9 !important;
+    margin-left: 32px !important;
+}
+
+.PrivateValueLabel-circle-26{
+    background-color: whitesmoke !important;
+    opacity: 0.9 !important;
+    box-shadow: 0 0 5px black !important;
+    color: #333333 !important;
+
+}
+
+.PrivateValueLabel-label-27{
+    color: #333333 !important;
+    opacity: 0.9 !important;
+    text-shadow: 0 0 0.5px #333333;
+}
+
+.MuiTooltip-popper{
+    z-index: 1 !important;
+}
+
+/*</>*/
+
+
+.btnPlayer{
+    /*margin-bottom: 5px;*/
+    margin-left: 10px;
+    opacity: 0.9;
+    border-radius: 30px;
+    min-width: 35px;
+    min-height: 35px;
+    font-size: 0.9rem;
+    /*background-color: rgba(111, 111, 111, 0.91);*/
+    /*border-color: rgba(111, 111, 111, 0.91);*/
+    background-color: white;
+    border-color: white;
+    color: #333333;
+    box-shadow: 0 0 5px black;
+    vertical-align: top !important;
+
+
+}
+
+
+.legendNplayer{
+
+    position: absolute;
+    z-index: 1;
+    bottom: 1px !important;
+
+}
+
+
+.playerButton{
+    right: 10px;
+}
+
+.text-center{
+
+    text-align: center;
+}
+
+.margin{
+    margin:0;
+    padding: 0;
+}
+
+marginPlayer{
+    /*margin-bottom: 20px;*/
+    padding: 0;
+}
+
+
+.rangeSlider{
+
+    margin: 0 !important;
+}
+
+[data-md-tooltip]:before{
+    background-color: black !important;
+}
+
+
+
+.paddingTop{
+    margin-top: 25px !important;
+}
+
+/* Select Pollutant Switch */
+
+.selectPollutantSwitch{
+    z-index: 1;
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    transform: scale(0.8);
+
+}
+
+.ui.active.button{
+    background-color: rgba(155, 0, 0, 0.8) !important;
+    color: #e5e5e5 !important;
+}
+
+.ui.active.button:hover{
+    color: #e5e5e5 !important;
+}
+
+.or::before{
+
+    background: rgb(241,241,241);
+    background: radial-gradient(circle, rgba(241,241,241,1) 0%, rgba(241,241,241,1) 45%, rgba(255,247,247,1) 100%);
+    box-shadow: inset 0 0 0.3px #9d9d9d !important;
+    transform: scale(0.8);
+
+}
+
+
+/* /Select Pollutant Switch */
+
+.logosSpan{
+
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    left: 0 !important;
+    right: 0 !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    /*-webkit-transform: translateX(-50%);*/
+    /*transform: translateX(-50%);*/
+    width: 200px;
+    padding: 0 !important;
+}
+
+.pmAlarmLogoStyle{
+    width: 200px;
+}
+
+
+
+
+

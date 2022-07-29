@@ -1,0 +1,229 @@
+
+.containerDiv {
+    width: 350px;
+    max-height: 100vh;
+    z-index: 3;
+    position: absolute;
+    background-color: #ebebeb;
+    opacity: 0.98;
+    padding: 0;
+    box-shadow: 0 0 7px black;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    /*visibility: hidden;*/
+    width: 0 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    scroll-padding: 0 !important;
+    scroll-margin: 0 !important;
+    background-color: #ebebeb !important;
+
+
+}
+
+::-webkit-scrollbar-track {
+    background-color: #ebebeb !important;
+    width: 0 !important;
+    border-style: none !important;
+    visibility: hidden !important;
+}
+
+::-webkit-scrollbar-thumb{
+    width: 0 !important;
+    background-color: #ebebeb !important;
+
+}
+
+
+.pmAlarmLogoDiv{
+    width: 100%;
+    margin: 0;
+}
+
+.pmAlarmLogoImage{
+    max-width: 100%;
+    padding: 20px 20px 30px 20px;
+    transform: scale(0.8);
+}
+
+/*About system*/
+.aboutSystemButtonDiv{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    border-top: 0.3px solid #dcdcdc;
+    background-color: whitesmoke;
+}
+
+.aboutSystemButtonDiv:hover{
+  background-color: #dcdcdc;
+}
+
+.aboutSystemButtonImageDiv{
+
+    height: 100%;
+    width: 25%;
+}
+
+.aboutSystemButtonImage{
+    color: #2D6683;
+    margin: 0 auto !important;
+    transform: translate(70%,40%) !important;
+    font-size: 35px !important;
+}
+
+.aboutSystemButtonTitleDiv{
+    height: 100%;
+    width: 75%;
+}
+
+.aboutSystemButtonTitle{
+    transform: translate(0,100%) !important;
+}
+
+.aboutSystemTextDiv{
+    padding: 15px;
+}
+
+.aboutSystemTextTitle{
+    color: #2D6683;
+    text-align: center;
+}
+
+.aboutSystemText{
+    text-align: justify;
+}
+
+/*Privacy policy*/
+.shareButtonDiv{
+    display: flex;
+    height: 60px;
+    width: 100%;
+    border-bottom: 0.3px solid #dcdcdc;
+    border-top: 0.3px solid #dcdcdc;
+    background-color: whitesmoke;
+}
+
+.shareButtonDiv:hover{
+    background-color: #dcdcdc;
+}
+
+.shareButtonImageDiv{
+
+    height: 100%;
+    width: 25%;
+}
+
+.shareButtonImage{
+    color: #2D6683;
+    margin: 0 auto !important;
+    transform: translate(70%,40%) !important;
+    font-size: 35px !important;
+}
+
+.shareButtonTitleDiv{
+    height: 100%;
+    width: 75%;
+}
+
+.shareButtonTitle{
+    transform: translate(0,100%) !important;
+}
+
+.sharePopupDiv{
+
+}
+
+.shareTextTitle{
+    color: #2D6683;
+    text-align: center;
+}
+
+.shareIcons{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px 10px 25px;
+}
+
+.shareIcon{
+    border-radius: 15px !important;
+    box-shadow: 0 0 3px #333333;
+}
+
+.shareIcon:hover{
+    transform: scale(1.1);
+}
+
+/*ios android Logo*/
+
+.iosAndroidLogoDiv{
+    width: 100%;
+    display: flex;
+    /*padding: 10px;*/
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.androidAppLogo{
+    width: 130px;
+}
+
+.androidAppLogo:hover{
+    transform: scale(1.1);
+}
+
+.iosAppLogo{
+    width: 130px;
+}
+
+.iosAppLogo:hover{
+    transform: scale(1.1);
+}
+
+/*Inteligenta Finki Logo*/
+.inteligentaFinkiLogoDiv{
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+.inteligentaLogo{
+    width: 95%;
+}
+
+.finkiLogo{
+    width: 95%;
+
+}
+
+/*close*/
+
+.closeButtonDiv{
+    display: flex;
+    height: 35px;
+    width: 100%;
+    border-bottom: 0.3px solid #dcdcdc;
+    border-top: 0.3px solid #dcdcdc;
+    background-color: #dcdcdc;
+    position: sticky;
+    bottom: 0;
+}
+
+.closeButtonDiv:hover{
+    background-color: #cdcdcd;
+}
+
+
+.closeButtonImage{
+    color: brown;
+    margin: 0 auto !important;
+    text-align: center;
+    transform: translate(20%,17%) !important;
+    font-size: 25px !important;
+}
