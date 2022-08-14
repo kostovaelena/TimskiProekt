@@ -17,15 +17,29 @@ export default class Pollutants extends React.Component {
         super(props);
         this.state={
             PM10isActive:true,
+            THUNDERSTORMisActive:false,
             PM25isActive:false,
             NOisActive:false,
             SO2isActive:false
         }
     }
 
+    THUNDERSTORMisClicked=()=>{
+      this.setState({
+          THUNDERSTORMisActive:true,
+          PM25isActive:false,
+          PM10isActive:false,
+          NOisActive:false,
+          SO2isActive:false,
+          currentActive:"THUNDERSTORM"
+      })
+      this.props.changePollutantFun("THUNDERSTORM");
+    };
+
     PM25IsClicked=()=>{
         this.setState({
             PM25isActive:true,
+            THUNDERSTORMisActive:false,
             PM10isActive:false,
             NOisActive:false,
             SO2isActive:false,
@@ -36,6 +50,7 @@ export default class Pollutants extends React.Component {
     PM10IsClicked=()=>{
         this.setState({
             PM25isActive:false,
+            THUNDERSTORMisActive:false,
             PM10isActive:true,
             NOisActive:false,
             SO2isActive:false,
@@ -46,6 +61,7 @@ export default class Pollutants extends React.Component {
     NOIsClicked=()=>{
         this.setState({
             PM25isActive:false,
+            THUNDERSTORMisActive:false,
             PM10isActive:false,
             NOisActive:true,
             SO2isActive:false,
@@ -56,6 +72,7 @@ export default class Pollutants extends React.Component {
     SO2IsClicked=()=>{
         this.setState({
             PM25isActive:false,
+            THUNDERSTORMisActive:false,
             PM10isActive:false,
             NOisActive:false,
             SO2isActive:true,
@@ -71,6 +88,8 @@ export default class Pollutants extends React.Component {
 
             <div className="selectPollutantSwitch">
                 <Button.Group>
+                    <Button active = {this.state.THUNDERSTORMisActive} onClick={this.THUNDERSTORMisClicked}>THUNDERSTORMS</Button>
+                    <Button.Or text=""/>
                     <Button active={this.state.PM10isActive} onClick={this.PM10IsClicked}>PM<sub>10</sub></Button>
                     <Button.Or text=""/>
                     <Button active={this.state.PM25isActive} onClick={this.PM25IsClicked}>PM<sub>2.5</sub></Button>
