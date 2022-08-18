@@ -31,9 +31,9 @@ export default class Pollutants extends React.Component {
           PM10isActive:false,
           NOisActive:false,
           SO2isActive:false,
-          currentActive:"THUNDERSTORM"
+          currentActive:"THDR"
       })
-      this.props.changePollutantFun("THUNDERSTORM");
+      this.props.changePollutantFun("THDR");
     };
 
     PM25IsClicked=()=>{

@@ -131,6 +131,22 @@ export default class SelectedLocation extends React.Component {
         }
     };
 
+    getTHDRColor=(val)=>{ // tuka treba da se proverat vrednostite uste ednas
+      if (val<1) {
+          return 'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(32,255,23,1) 70%)';
+      } else if (val<2) {
+          return 'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,248,23,1) 70%)';
+      } else if (val<3) {
+          return 'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,165,0,1) 70%)';
+      } else if (val<4) {
+          return 'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,34,23,1) 70%)';
+      } else if (val<5) {
+          return 'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,14,100,1) 70%)';
+      } else{
+          return 'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(218,78,18,1) 70%)'
+      }
+    };
+
     renderHours(){
         let res = []
         let hours = this.state.hours
@@ -177,7 +193,12 @@ export default class SelectedLocation extends React.Component {
                         if(j === 23) values.push(<td className="pollutant-td" style={{background: this.getSO2Color(pollutantValues[j])}}  key={tdID}>{Math.round(pollutantValues[j]*100)/100}</td>)
                         else values.push(<td width={30} className="pollutant-td" style={{background: this.getSO2Color(pollutantValues[j])}}  key={tdID}>{Math.round(pollutantValues[j]*100)/100}</td>)
                     }
-                    
+                    else if (pollutant === 5){
+                      if(j === 23) values.push(<td className="pollutant-td" style={{background: this.getTHDRColor(pollutantValues[j])}}  key={tdID}>{Math.round(pollutantValues[j]*100)/100}</td>)
+                      else values.push(<td width={30} className="pollutant-td" style={{background: this.getTHDRColor(pollutantValues[j])}}  key={tdID}>{Math.round(pollutantValues[j]*100)/100}</td>)
+                    }
+
+
                 }
             }
         }
@@ -216,6 +237,7 @@ export default class SelectedLocation extends React.Component {
                                 <div className="legendItem" ><span className="legendSpan">PM<sub>2.5</sub></span>µg/m<sup>3</sup></div>
                                 <div className="legendItem" ><span className="legendSpan">NO</span>µg/m<sup>3</sup></div>
                                 <div className="legendItem" ><span className="legendSpan">SO<sub>2</sub></span>µg/m<sup>3</sup></div>
+                                <div className="legendItem" ><span className="legendSpan">THDR</span>Category</div>
                             </div>
                         </div>
 
@@ -233,6 +255,7 @@ export default class SelectedLocation extends React.Component {
                                 <tr>{this.renderItems(2)}</tr>
                                 <tr>{this.renderItems(3)}</tr>
                                 <tr>{this.renderItems(4)}</tr>
+                                <tr>{this.renderItems(5)}</tr>
                                 </tbody>
                             </table>
                         </div>

@@ -6,6 +6,7 @@ import Legend from './mapi/legend'
 import LegendPM10 from './mapi/legendPM10'
 import LegendNO from './mapi/legendNO'
 import LegendSO2 from './mapi/legendSO2'
+import LegendTHDR from './mapi/legendThunderstorms';
 import Pollutants from "./selectPollutant";
 import SidePanel from './sidePanel';
 import ErrDiv from './errorMsg'
@@ -22,7 +23,7 @@ import SliderTooltip from './SliderTooltip'
 
 
 let interval = null;
-
+// dodadi pollutantType == 5, i shortcut name za Thunderstorms. Isto taka, sredi stateot za kopceto. I dodadi boi (1...5)
 
 class Mapa extends React.Component {
 
@@ -149,7 +150,8 @@ class Mapa extends React.Component {
                 PM25isActive:true,
                 PM10isActive:false,
                 NOisActive:false,
-                SO2isActive:false
+                SO2isActive:false,
+                THUNDERSTORMisActive: false
             },this.checkforPopup)
 
         }
@@ -160,7 +162,8 @@ class Mapa extends React.Component {
                 PM25isActive:false,
                 PM10isActive:true,
                 NOisActive:false,
-                SO2isActive:false
+                SO2isActive:false,
+                THUNDERSTORMisActive: false
             },this.checkforPopup)
 
         }
@@ -171,7 +174,8 @@ class Mapa extends React.Component {
                 PM25isActive:false,
                 PM10isActive:false,
                 NOisActive:true,
-                SO2isActive:false
+                SO2isActive:false,
+                THUNDERSTORMisActive: false
             },this.checkforPopup)
 
         }
@@ -182,9 +186,21 @@ class Mapa extends React.Component {
                 PM25isActive:false,
                 PM10isActive:false,
                 NOisActive:false,
-                SO2isActive:true
+                SO2isActive:true,
+                THUNDERSTORMisActive: false
             },this.checkforPopup)
 
+        }
+
+        if(poll == "THDR"){
+          this.setState({
+             pollutantType: 5,
+             PM25isActive:false,
+             PM10isActive:false,
+             NOisActive:false,
+             SO2isActive:false,
+             THUNDERSTORMisActive: true
+         },this.checkforPopup)
         }
 
     };
@@ -496,10 +512,11 @@ class Mapa extends React.Component {
                         {this.state.PM25isActive && <span>PM<sub>2.5</sub></span>}
                         {this.state.PM10isActive && <span>PM<sub>10</sub></span>}
                         {this.state.NOisActive && <span>NO</span>}
-                        {this.state.SO2isActive && <span>SO<sub>2</sub></span>}<span>&nbsp;&nbsp;&nbsp;
+                        {this.state.SO2isActive && <span>SO<sub>2</sub></span>}
+                        {this.state.THUNDERSTORMisActive && <span>THDR</span>}<span>&nbsp;&nbsp;&nbsp;
                           {this.state.loadingData && <CircularProgress color="primary" size='15px' className="selectedPollutantLoadingCircle" />}
                           {!this.state.loadingData && this.state.pollutantValue.toFixed(2)}
-                        µg/m<sup>3</sup></span>
+                        µg/m<sup>3</sup></span> 
 
 
                     </Popup>}
@@ -543,6 +560,7 @@ class Mapa extends React.Component {
                             {this.state.PM10isActive && <LegendPM10 displayLegend={true}/>}
                             {this.state.NOisActive && <LegendNO displayLegend={true}/>}
                             {this.state.SO2isActive && <LegendSO2 displayLegend={true}/>}
+                            {this.state.THUNDERSTORMisActive && <LegendTHDR displayLegend={true}/>}
                         </Col>
                     </Row>
                 </Container>}
